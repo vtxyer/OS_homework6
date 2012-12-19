@@ -1,0 +1,15 @@
+1) cd into the directory with this program, then run make.
+
+2) set define value between 20~23
+    like:
+        #define PID 1524
+        #define ADDR 0x25a4010
+        #define INIT_MM 0xffffffff81a61010
+        #define SYS_CALL_TABLE 0xffffffff81600390
+
+3) complete remaining code section(/*Neet to implement*/)
+
+4) if you want to start capture open() system call, #insmod Capture_open.c
+   (if you have some error in your module, it may lead to reboot your virtual machine)
+
+5) if you want to stop capture open() system call, #rmmod Capture_open.c
